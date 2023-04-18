@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear nuevo personaje</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navegacion">
+            <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
+        </nav>
+        <form class="form">
+            <h2>Crear nuevo personaje</h2>
+            <div class="form__group">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" class="form__input" type="text" placeholder="Ingrese el nombre del personaje" required>
+            </div>
+            <div class="form__group">
+                <label for="genero">Género:</label>
+                <input id="genero" class="form__input" type="text" placeholder="Ingrese el género del personaje" required>
+            </div>
+            <div class="form__group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" class="form__textarea" placeholder="Ingrese la descripción del personaje" required></textarea>
+            </div>
+            <div class="form__group">
+                <label for="imagen">Imagen:</label>
+                <input id="imagen" class="form__input" type="file" accept="image/*">
+            </div>
+            <button class="form__submit-btn" type="submit">Enviar</button>
+        </form>
+        <div class="mensaje">
+            <p class="mensaje__texto">El personaje ha sido guardado exitosamente</p>
+        </div>
+    </div>
+    <!-- Agrega este campo para seleccionar la imagen -->
+    <button type="submit">Enviar</button>
+    <div>
+        <label for="file">File progress:</label>
+        <progress id="file" max="100" value="33,3%"> 33,3% </progress>
+    </div>
+    </form>
+    <div id="mensaje" hidden>¡Personaje subido correctamente!</div>
+    <footer class="footer">
+        <p class="footer__texto">Coex - Todos los derechos Reservados 2023.</p>
+    </footer>
+</body>
+
+</html>
